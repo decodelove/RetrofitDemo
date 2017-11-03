@@ -6,7 +6,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import com.google.retrofitdemo.MyApplication;
 import com.google.retrofitdemo.R;
-import com.google.retrofitdemo.net.bean.MovieEntity;
+import com.google.retrofitdemo.module.net.bean.MovieEntity;
 import com.google.retrofitdemo.utils.MLog;
 import com.squareup.picasso.Picasso;
 

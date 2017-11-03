@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.google.retrofitdemo.view.MainActivity">
+
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toobar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:title="@string/movie_title"
+    app:titleTextColor="@android:color/black"
+    android:background="@color/colorAccent"/>
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="输入起始查询数字" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="输入终点查询数字" />
+
+    <Button
+        android:id="@+id/click_me_BN"
+        android:text="点我查询电影"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ScrollView
+        android:layout_below="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/movie_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电影列表如下"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/movie_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
